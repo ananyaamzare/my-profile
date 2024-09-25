@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card</title>
+    <style>
+        .photo-section{
+            display: inline-block;
+
+        }
+        .content-section{
+            display: inline-block;
+
+        }
+        .point li{
+            padding: 10px;
+        }
+        .point li::before{
+            content: "📋";
+        }
+        .point:hover{
+            background-color: rgb(220, 213, 227);
+        }
+        .point li:hover{
+        color: rgb(120, 170, 21);
+        }
+        .para::selection{ 
+            color: rgb(193, 22, 22);
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-section">
+            <img src="accets/Developer.png.jpg" width="300px" height="250px" alt="profile photo" background-size>
+        </div>
+        <div class="content-section">
+            <h2>Contain Section</h2>
+            <ul  class="point">
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+        </div>
+        <p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, in?
+        </p>
+    </div>
+</body>
+</html>
